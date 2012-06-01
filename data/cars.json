@@ -1,0 +1,99 @@
+{ data: [
+{
+    model: '128i Convertible',
+    price: 36900,
+	mpg: 28,
+	horsepower: 230, 
+	lease: 419
+}
+,
+{
+	model: '135i Convertible',
+	price: 44100,
+	mpg: 28,
+	horsepower: 300, 
+	lease: 489
+}
+,
+{
+	model: '128i Coupe',
+	price: 31200,
+	mpg: 28,
+	horsepower: 230, 
+	lease: 369
+}
+,
+{
+
+	model: '135i Coupe',
+	price: 39300,
+	mpg: 28,
+	horsepower: 300, 
+	lease: 430 
+}
+,
+{
+	model: '328i Coupe',
+	price: 38700,
+	mpg: 28,
+	horsepower: 230, 
+	lease: 419 
+}
+,
+{
+	model: '328i xDrive Coupe',
+	price: 40400,
+	mpg: 26,
+	horsepower: 230, 
+	lease: 429 
+}
+,
+{
+	model: '335i Coupe',
+	price: 45100,
+	mpg: 28,
+	horsepower: 300, 
+	lease: 469 
+}
+,
+{
+	model: '335is Coupe',
+	price: 52000,
+	mpg: 26,
+	horsepower: 320, 
+	lease: 559
+}
+,
+{
+	model: '335i xDrive Coupe',
+	price: 46800,
+	mpg: 27,
+	horsepower: 300, 
+	lease: 489
+}
+,
+{
+	model: 'Z4 sDrive28i',
+	price: 48650,
+	mpg: 32,
+	horsepower: 240, 
+	lease: 459
+}
+,
+{
+	model: 'Z4 sDrive35i',
+	price: 55150,
+	mpg: 26,
+	horsepower: 300, 
+	lease: 499
+}
+,
+{
+	model: 'Z4 sDrive35is',
+	price: 64200,
+	mpg: 24,
+	horsepower: 335, 
+	lease: 599
+}
+]}
+

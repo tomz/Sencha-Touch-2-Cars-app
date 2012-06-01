@@ -1,0 +1,93 @@
+{
+    "id": "ExtBox1-ext-gen67533",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainController"
+    },
+    "customConfigs": [],
+    "designerId": "ce13a7b3-9b3f-4450-88d9-7037851b6b4f",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen67538",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCarListItemTap",
+                "implHandler": [
+                    "var carsPanel = this.getCarsPanel();",
+                    "",
+                    "carsPanel.down(\"#back\").show();",
+                    "",
+                    "carsPanel.down(\"#carsTitlebar\").setTitle(record.data.model);",
+                    "",
+                    "carsPanel.down(\"#img\").setSrc(\"images/\"+record.data.img+\".jpg\");",
+                    "",
+                    "infoFieldSet = carsPanel.down(\"#infoFieldSet\");",
+                    "infoFieldSet.down(\"#price\").setValue(\"$\"+record.data.price);",
+                    "infoFieldSet.down(\"#mpg\").setValue(record.data.mpg);",
+                    "infoFieldSet.down(\"#horsepower\").setValue(record.data.horsepower);",
+                    "infoFieldSet.down(\"#lease\").setValue(\"$\"+record.data.lease+\"/month\");",
+                    "",
+                    "carsPanel.setActiveItem(1);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#carList",
+                "designer|userClassName": "onCarListItemTap"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen71085",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "carsPanel",
+                "selector": "#carsPanel",
+                "designer|userClassName": "carsPanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen73570",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBackTap",
+                "implHandler": [
+                    "var carsPanel = this.getCarsPanel();",
+                    "button.hide();",
+                    "carsPanel.down(\"#carsTitlebar\").setTitle(\"Cars\");",
+                    "carsPanel.setActiveItem(0);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#back",
+                "designer|userClassName": "onBackTap"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

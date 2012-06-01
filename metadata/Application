@@ -1,0 +1,29 @@
+{
+    "id": "ExtBox1-ext-gen58370",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Car"
+        ],
+        "stores": [
+            "CarJsonStore"
+        ],
+        "views": [
+            "CarsPanel"
+        ],
+        "name": "CarsApp",
+        "controllers": [
+            "MainController"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true
+}

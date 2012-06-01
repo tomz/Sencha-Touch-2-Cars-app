@@ -1,0 +1,234 @@
+{
+    "id": "ExtBox1-ext-gen58428",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "id": "carsPanel",
+        "layout": "card",
+        "designer|userClassName": "CarsPanel"
+    },
+    "customConfigs": [],
+    "designerId": "41d37961-49e7-41cc-97ee-e9b25e1189c6",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen58766",
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "id": "carsTitlebar",
+                "title": "Cars",
+                "designer|userClassName": "MyToolbar"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen66335",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "id": "back",
+                        "itemId": "mybutton",
+                        "styleHtmlContent": true,
+                        "ui": "back",
+                        "iconCls": null,
+                        "iconMask": true,
+                        "text": "Back",
+                        "designer|userClassName": "MyButton"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen59016",
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "carList",
+                "itemId": "mylist",
+                "itemTpl": "<div>{model}</div>",
+                "store": "CarJsonStore",
+                "designer|userClassName": "MyList"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen8573",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "id": "carInfo",
+                "width": null,
+                "scrollable": true,
+                "designer|userClassName": "MyPanel2"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen9033",
+                    "type": "fieldset",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "infoFieldSet",
+                        "margin": null,
+                        "padding": null,
+                        "title": null,
+                        "designer|userClassName": "MyFieldSet"
+                    },
+                    "customConfigs": [],
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen9451",
+                            "type": "image",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top",
+                                "height": null,
+                                "id": "img",
+                                "margin": null,
+                                "maxWidth": null,
+                                "minHeight": 137,
+                                "padding": null,
+                                "style": null,
+                                "ui": "",
+                                "width": "100%",
+                                "src": "http://localhost:4000/images/135iCoupe.jpg",
+                                "designer|userClassName": "MyImage",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen20345",
+                            "type": "spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 2,
+                                "designer|userClassName": "MySpacer",
+                                "layout|flex": null
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen9042",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "price",
+                                "label": "Price",
+                                "labelWidth": "40%",
+                                "readOnly": true,
+                                "designer|userClassName": "MyTextField"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen9049",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "mpg",
+                                "label": "MPG",
+                                "labelWidth": "40%",
+                                "readOnly": true,
+                                "designer|userClassName": "MyTextField1"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen9671",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "horsepower",
+                                "label": "Horsepower",
+                                "labelWidth": "40%",
+                                "readOnly": true,
+                                "designer|userClassName": "MyTextField1"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen9785",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "lease",
+                                "label": "Lease",
+                                "labelWidth": "40%",
+                                "readOnly": true,
+                                "designer|userClassName": "MyTextField1"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
