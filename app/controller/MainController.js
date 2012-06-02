@@ -17,7 +17,8 @@ Ext.define('CarsApp.controller.MainController', {
     extend: 'Ext.app.Controller',
     config: {
         refs: {
-            carsPanel: '#carsPanel'
+            carsPanel: '#carsPanel',
+            carInfo: '#carInfo'
         },
 
         control: {
@@ -31,15 +32,15 @@ Ext.define('CarsApp.controller.MainController', {
     },
 
     onCarListItemTap: function(dataview, index, target, record, e, options) {
-        var carsPanel = this.getCarsPanel();
+        var carsPanel = this.getCarsPanel(),
+            carInfo = this.getCarInfo();
 
         carsPanel.down("#back").show();
-
         carsPanel.down("#carsTitlebar").setTitle(record.data.model);
 
-        carsPanel.down("#img").setSrc("images/"+record.data.img+".jpg");
+        carInfo.down("#img").setSrc("images/"+record.data.img+".jpg");
 
-        infoFieldSet = carsPanel.down("#infoFieldSet");
+        infoFieldSet = carInfo.down("#infoFieldSet");
         infoFieldSet.down("#price").setValue("$"+record.data.price);
         infoFieldSet.down("#mpg").setValue(record.data.mpg);
         infoFieldSet.down("#horsepower").setValue(record.data.horsepower);

@@ -25,15 +25,15 @@
             "userConfig": {
                 "fn": "onCarListItemTap",
                 "implHandler": [
-                    "var carsPanel = this.getCarsPanel();",
+                    "var carsPanel = this.getCarsPanel(),",
+                    "    carInfo = this.getCarInfo();",
                     "",
                     "carsPanel.down(\"#back\").show();",
-                    "",
                     "carsPanel.down(\"#carsTitlebar\").setTitle(record.data.model);",
                     "",
-                    "carsPanel.down(\"#img\").setSrc(\"images/\"+record.data.img+\".jpg\");",
+                    "carInfo.down(\"#img\").setSrc(\"images/\"+record.data.img+\".jpg\");",
                     "",
-                    "infoFieldSet = carsPanel.down(\"#infoFieldSet\");",
+                    "infoFieldSet = carInfo.down(\"#infoFieldSet\");",
                     "infoFieldSet.down(\"#price\").setValue(\"$\"+record.data.price);",
                     "infoFieldSet.down(\"#mpg\").setValue(record.data.mpg);",
                     "infoFieldSet.down(\"#horsepower\").setValue(record.data.horsepower);",
@@ -85,6 +85,22 @@
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#back",
                 "designer|userClassName": "onBackTap"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen170418",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "carInfo",
+                "selector": "#carInfo",
+                "designer|userClassName": "carInfo"
             },
             "customConfigs": [],
             "expanded": true
