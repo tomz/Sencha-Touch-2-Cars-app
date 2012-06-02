@@ -1,7 +1,7 @@
 { data: [
 {
-    model: '128i Convertible',
-    price: 36900,
+	model: '128i Convertible',
+	price: 36900,
 	mpg: 28,
 	horsepower: 230, 
 	lease: 419
@@ -24,7 +24,6 @@
 }
 ,
 {
-
 	model: '135i Coupe',
 	price: 39300,
 	mpg: 28,
